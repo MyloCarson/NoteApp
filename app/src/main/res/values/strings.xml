@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NoteApp</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="new_note">New Note</string>
+</resources>

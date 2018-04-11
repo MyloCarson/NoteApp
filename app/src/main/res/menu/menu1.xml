@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Version"
+        android:id="@+id/version"
+        android:icon="@mipmap/version"
+        app:showAsAction="never"
+        />
+    <item android:title="How to Use"
+        android:id="@+id/info"
+        android:icon="@mipmap/info"
+        app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary">
+            <ImageView
+                android:id="@+id/editIcon"
+                android:layout_width="@dimen/ic_delete"
+                android:layout_height="@dimen/ic_delete"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padd_10"
+                android:layout_weight="0.4"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/edit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EDIT"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:textAlignment="textStart"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:background="@color/bg_row_background">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="DELETE"
+                android:textAlignment="viewEnd"
+                android:gravity="center_vertical"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/delete_icon"
+                android:layout_width="@dimen/ic_delete"
+                android:layout_height="@dimen/ic_delete"
+                android:layout_marginRight="@dimen/padd_10"
+                android:src="@mipmap/white_delete"
+                android:layout_weight="0.4"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+            <!--<ImageView-->
+                <!--android:id="@+id/editIcon"-->
+                <!--android:layout_width="@dimen/ic_delete"-->
+                <!--android:layout_height="@dimen/ic_delete"-->
+                <!--android:layout_alignParentRight="false"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="@dimen/padd_10"-->
+                <!--android:src="@mipmap/edit" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="@dimen/padd_10"-->
+                <!--android:layout_toRightOf="@id/editIcon"-->
+                <!--android:text="EDIT"-->
+                <!--android:textColor="#fff"-->
+                <!--android:textSize="16dp" />-->
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/delete_icon"-->
+            <!--android:layout_width="@dimen/ic_delete"-->
+            <!--android:layout_height="@dimen/ic_delete"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="@dimen/padd_10"-->
+            <!--android:src="@mipmap/white_delete" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="@dimen/padd_10"-->
+            <!--android:layout_toLeftOf="@id/delete_icon"-->
+            <!--android:text="DELETE"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="16dp" />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="@dimen/padd_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginTop="5dp"
+            android:textSize="12dp"
+            android:lines="1"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#727272"/>
+
+
+
+
+    </LinearLayout>
+</FrameLayout>
